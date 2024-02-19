@@ -1,0 +1,43 @@
+score分數紀錄(以下都是local train)
+
+Single Bert Model Path:
+
+C:\Users\Lab000\Desktop\kaggle\kaggle_competetion\Google_Quest_LABEL\my-solution\code\SingleBert\bert_based_case\NoInit\BceNo-OptBinning
+
+Training Code:BertBasedTrain.ipynb
+Inference Code:BertBasedInfer
+
+score(無lgbm, 無postprocessing):
+fold0~8, Private B:0.36818, Public B:0.39663; fold0~9, Private B:0.36802, Public B:0.39745
+
+Non Shared Weights Double Bert Model Path:
+
+C:\Users\Lab000\Desktop\kaggle\kaggle_competetion\Google_Quest_LABEL\my-solution\code\non-shared-weight\double\Bce-NoOptbinning
+
+Training Code: DoubleBertNonSharedTrain.ipynb((stoken 2有加上[cate]))
+
+Inference Code:
+DoubleBertNonSharedInfer.ipynb(stoken 2沒有加上[cate])
+DoubleBertNonSharedInfer_2.ipynb(stoken 2有加上[cate])
+
+
+DoubleBertNonSharedInfer_2.ipynb score(無lgbm, 無postprocessing):
+
+fold0~9, Private B:0.37087, Public B:0.39203; fold0~8, Private B:0.37073, Public B:0.39186
+
+DoubleBertNonSharedInfer_2.ipynb score
+(26th solution Author lgbm model, 26th solution Author postprocessing(優化Rounder Coef)):
+
+fold0~9, Private B:0.39274, Public B:0.42766
+
+
+DoubleBertNonSharedInfer_2.ipynb score
+(Only 21th Solution Author Postprocessing(threshold)):
+
+fold0~9, Private B:0.39852(73th), Public B:0.42864
+
+
+
+
+
+
